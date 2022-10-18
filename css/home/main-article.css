@@ -78,21 +78,26 @@
   object-position: center;
 }
 
+@media(max-width:1000px){
+  .main{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
 @media (max-width:800px){
   .main{
   grid-template-columns: 1fr;
-  
   }
   
   
 .picture-main{
-  max-height: 300px;
+  max-height: 400px;
  
 }
 
 .picture-main img{
   
-  object-fit: cover;
+  object-fit:cover;
   object-position: top;
 }
 
@@ -111,9 +116,6 @@
     order:-5;
     padding: 40px; 
   }
-}
-
-@media (max-width:600px){
   .info-container{
     justify-items: center;
   }
@@ -122,15 +124,6 @@
  
 
 }
-
-
-@media (max-width:400px){
-  .info-container{
-    padding: 60px 20px;
-  }
-  .info-container input[type="email"]{
-    
-    }
-   
-    
 }
+
+
