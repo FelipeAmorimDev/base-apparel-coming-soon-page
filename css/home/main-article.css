@@ -93,7 +93,10 @@
   .main {
     grid-template-columns: 1fr;
   }
-
+  .info-container h1{
+    
+    font-size: 4rem;
+  }
 
   .picture-main {
     max-height: 400px;
@@ -132,5 +135,11 @@
     padding: 60px 20px;
 
 
+  }
+}
+
+@media (max-width:400px){
+  .info-container h1{
+    font-size: 3.1rem;
   }
 }
