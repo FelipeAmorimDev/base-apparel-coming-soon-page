@@ -80,9 +80,8 @@
   object-position: center;
 }
 
-.info-container h1{
-  text-align: center;
-}
+
+
 
 @media(max-width:1000px) {
   .main {
