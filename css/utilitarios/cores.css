@@ -1,0 +1,17 @@
+:root{
+  --cor-0:hsl(0, 36%, 70%);
+  --cor-1:hsl(0, 93%, 68%);
+  --cor-2:hsl(0, 6%, 24%);
+}
+
+.cor-0{
+  color:var(--cor-0);
+}
+
+.cor-1{
+  color:var(--cor-1);
+}
+
+.cor-2{
+  color:var(--cor-2);
+}

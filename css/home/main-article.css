@@ -1,0 +1,135 @@
+.main{
+  display: grid;
+  grid-template-columns:2fr 1fr;
+  max-width: 1400px;
+  margin: 100px auto 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: -10px 0px  200px var(--cor-1);
+  
+  
+ 
+}
+
+.logo-mobile{
+  display: none;
+}
+
+.info-container{
+  place-items: flex-start;
+  place-content: center;
+  display: grid;
+  gap: 40px;
+  padding: 60px 80px 20px;
+}
+
+.info-container p{
+  max-width: 40ch;
+}
+.info-container input{
+  position: relative;
+}
+.info-container input[type="email"]{
+  
+  border: 2px solid var(--cor-0);;
+  width: 150%;
+  padding: 14px;
+  border-radius: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  
+}
+.info-container input[type="submit"]{
+  background: linear-gradient(135deg, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 100%);
+  position: relative;
+  width: 30%;
+  padding: 13px;
+  top: -48px;
+  left: 320px;
+  color: white;
+ 
+  border-radius: 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 4px 14px hsl(0deg 36% 70% / 80%);
+}
+
+.info-container input[type="submit"]:hover{
+  background: linear-gradient(135deg, rgba(244,244,244,1) 0%, rgba(255,245,245,1) 100%);
+  color: var(--cor-1);
+  
+}
+
+.bg{
+  background-image: url("../../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.picture-main img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width:800px){
+  .main{
+  grid-template-columns: 1fr;
+  
+  }
+.logo-mobile{
+  display: block;
+}
+  .info-container{
+    padding: 20px;
+  }
+  .logo-desktop{
+    display: none;
+  }
+  .picture-main{
+    order: -1;
+  }
+  .logo-mobile{
+    background-color: #f4f4f4;
+    order:-5;
+    padding: 40px; 
+  }
+}
+
+@media (max-width:600px){
+  .info-container{
+    justify-items: center;
+  }
+  .form-email{
+    
+    text-align: left;
+    justify-self: flex-start;
+  
+  }
+
+}
+
+@media (max-width:450px){
+  .info-container input[type="email"]{
+  width: 110%;
+  }
+ 
+  .info-container input[type="submit"]{
+  left: 230px;
+  width: 27%;
+  }
+}
+
+@media (max-width:360px){
+  .info-container input[type="email"]{
+    width: 100%;
+    }
+   
+    .info-container input[type="submit"]{
+    left: 230px;
+    width: 23%;
+    }
+}
