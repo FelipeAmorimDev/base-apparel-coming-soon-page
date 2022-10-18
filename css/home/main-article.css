@@ -5,7 +5,7 @@
   margin: 100px auto 0px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: -10px 0px  200px var(--cor-1);
+  box-shadow: -10px 0px  26px grey;
   
   
  
@@ -52,7 +52,7 @@
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
-  box-shadow: 2px 4px 14px hsl(0deg 36% 70% / 80%);
+  box-shadow: 2px 2px 12px hsl(0deg 36% 70% / 80%);
 }
 
 .info-container input[type="submit"]:hover{
@@ -80,6 +80,19 @@
   grid-template-columns: 1fr;
   
   }
+  
+  
+.picture-main{
+  max-height: 300px;
+ 
+}
+
+.picture-main img{
+  
+  object-fit: cover;
+  object-position: top;
+}
+
 .logo-mobile{
   display: block;
 }
