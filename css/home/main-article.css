@@ -29,36 +29,39 @@
 .info-container input{
   position: relative;
 }
+
 .info-container input[type="email"]{
-  
-  border: 2px solid var(--cor-0);;
-  width: 150%;
-  padding: 14px;
-  border-radius: 30px;
-  font-family: 'Josefin Sans', sans-serif;
+  padding: 8px;
+  width: calc(100% - 20px - 30px);
+  border-radius: 20px;
+  border: 1px solid var(--cor-1);
   font-size: 1rem;
-  
+  font-family: 'Josefin Sans', sans-serif;
 }
 .info-container input[type="submit"]{
-  background: linear-gradient(135deg, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 100%);
-  position: relative;
-  width: 30%;
-  padding: 13px;
-  top: -48px;
-  left: 320px;
-  color: white;
- 
-  border-radius: 30px;
-  font-size: 1.2rem;
+  position: absolute;
+  padding: 10px;
+  color: #f4f4f4;
+  min-width: 60px;
+  border-radius: 16px;
   border: none;
-  cursor: pointer;
-  box-shadow: 2px 2px 12px hsl(0deg 36% 70% / 80%);
+  background: linear-gradient(135deg, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 100%);
+  right: 1px;
+  top: 0px;
+  box-shadow: 1px 0px 7px var(--cor-1);
+  
+
 }
 
 .info-container input[type="submit"]:hover{
   background: linear-gradient(135deg, rgba(244,244,244,1) 0%, rgba(255,245,245,1) 100%);
   color: var(--cor-1);
-  
+}
+
+.form-email{
+   justify-self: stretch;
+   position: relative;
+   
 }
 
 .bg{
@@ -96,9 +99,7 @@
 .logo-mobile{
   display: block;
 }
-  .info-container{
-    padding: 20px;
-  }
+
   .logo-desktop{
     display: none;
   }
@@ -116,33 +117,20 @@
   .info-container{
     justify-items: center;
   }
-  .form-email{
-    
-    text-align: left;
-    justify-self: flex-start;
-  
-  }
-
-}
-
-@media (max-width:450px){
-  .info-container input[type="email"]{
-  width: 110%;
-  }
+  .info-container{
+    padding: 60px 20px;
  
-  .info-container input[type="submit"]{
-  left: 230px;
-  width: 27%;
-  }
+
 }
 
-@media (max-width:360px){
+
+@media (max-width:400px){
+  .info-container{
+    padding: 60px 20px;
+  }
   .info-container input[type="email"]{
-    width: 100%;
+    
     }
    
-    .info-container input[type="submit"]{
-    left: 230px;
-    width: 23%;
-    }
+    
 }
